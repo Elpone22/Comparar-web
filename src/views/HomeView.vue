@@ -37,9 +37,14 @@ interface ProductsData {
 // Cargar productos desde el JSON
 const loadProducts = async () => {
   try {
-    // Usamos fetch para cargar el JSON
-    const response = await fetch('/src/data/products.json')
+    const jsonUrl = '/data/products.json'
+    console.log('Intentando cargar desde:', jsonUrl)
+    const response = await fetch(jsonUrl)
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
     const data: ProductsData = await response.json()
+    console.log('Datos cargados:', data)
     products.value = data.products
   } catch (error) {
     console.error('Error al cargar los productos:', error)

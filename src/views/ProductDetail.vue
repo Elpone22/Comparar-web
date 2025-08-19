@@ -261,7 +261,7 @@ const goBack = () => {
 // Obtener productos del JSON
 const loadProduct = async () => {
   try {
-    const response = await fetch('/src/data/products.json')
+    const response = await fetch('/data/products.json')
     const data = await response.json()
     const productId = Number(route.params.id)
     const foundProduct = data.products.find((p: Product) => p.id === productId)
