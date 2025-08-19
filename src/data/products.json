@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S10",
+      "image": "https://bsl.cwa.sellercloud.com/images/products/330397.jpg",
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 8999,
+          "url": "https://www.amazon.com.mx",
+          "currency": "MXN",
+          "image": "https://galaxydidong.vn/wp-content/uploads/2023/04/galaxy-s10-plus.jpg"
+        },
+        {
+          "store": "Mercado Libre",
+          "price": 8499,
+          "url": "https://www.mercadolibre.com.mx",
+          "currency": "MXN",
+          "image": "https://galaxydidong.vn/wp-content/uploads/2023/04/galaxy-s10-plus.jpg"
+        },
+        {
+          "store": "eBay",
+          "price": 7999,
+          "url": "https://www.ebay.com",
+          "currency": "MXN",
+          "image": "https://bsl.cwa.sellercloud.com/images/products/330397.jpg"
+        },
+        {
+          "store": "Walmart",
+          "price": 8799,
+          "url": "https://www.walmart.com.mx",
+          "currency": "MXN",
+          "image": "https://tse1.mm.bing.net/th/id/OIP.-nFQ96Funs8929MpyO4elgHaGz?w=500&h"
+        },
+        {
+          "store": "Best Buy",
+          "price": 8999,
+          "url": "https://www.bestbuy.com.mx",
+          "currency": "MXN",
+          "image": "https://pisces.bbystatic.com/image2/BestBuy_MX/images/products/1000/1000245987_sa.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "iPhone 13 Pro",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero",
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 24999,
+          "url": "https://www.amazon.com.mx",
+          "currency": "MXN",
+          "image": "https://th.bing.com/th/id/R.dcd4e87fca64ee6a9a7c172d79c8885e?rik=ie4FxPyLTWYwbw&pid=ImgRaw&r=0"
+        },
+        {
+          "store": "Mercado Libre",
+          "price": 23999,
+          "url": "https://www.mercadolibre.com.mx",
+          "currency": "MXN",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_2X_722100-MLM53215816084_012023-F.webp"
+        },
+        {
+          "store": "eBay",
+          "price": 22999,
+          "url": "https://www.ebay.com",
+          "currency": "MXN",
+          "image": "https://i.ebayimg.com/images/g/2yIAAOSw2wVj0y1j/s-l1600.jpg"
+        }
+      ]
+    }
+  ]
+}
