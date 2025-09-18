@@ -7,38 +7,17 @@
       "prices": [
         {
           "store": "Amazon",
-          "price": 8999,
-          "url": "https://www.amazon.com.mx",
-          "currency": "MXN",
-          "image": "https://galaxydidong.vn/wp-content/uploads/2023/04/galaxy-s10-plus.jpg"
-        },
-        {
-          "store": "Mercado Libre",
-          "price": 8499,
-          "url": "https://www.mercadolibre.com.mx",
+          "price":241.78,
+          "url": "https://www.amazon.com/-/es/Samsung-Galaxy-S10-estadounidense-desbloqueado/dp/B0849YQDP1/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.7BIivIJiw_1Ee7fJst_l3oLu9u3Fm6oiXjkDJPw-1gc5BjXdqL_xA8PWhbgl4Ivd5nYyMQ8Bd0yo2tz2poUhWt5IWXkQeQMkIgSI_VvxT3Xhis824wnQpPeZw7GJ-VrmvZP7HPyL1BOzVnLzTcolwzNznsD5d882GibwOyOa18-xeZE-xne-j650m_U15kK0zn8D1p0ALM5BIacaLLquoBpFbVYxqm1-vy660PQMijM.Hw40cxIAVyxmCzSb3X0ZAqO1EByjHHYiub1Xs9vy-4A&dib_tag=se&keywords=samsung+s10+plus&qid=1758202192&sr=8-1",
           "currency": "MXN",
           "image": "https://galaxydidong.vn/wp-content/uploads/2023/04/galaxy-s10-plus.jpg"
         },
         {
           "store": "eBay",
-          "price": 7999,
-          "url": "https://www.ebay.com",
+          "price": 258.73,
+          "url": "https://www.ebay.com/itm/336176019477?_skw=samsung+s10+plus&itmmeta=01K5EFHA8324HRHT46REPEWTP6&hash=item4e45a6f815:g:KmMAAOSwU19moeCf&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1eAjRaAj88XKe7DW6fHZwUcEbguI77h5sdjPac9Sdj7n2%2FzzOP9fEuP7cRV%2F70ScMvbdwZW0fDF0s08BKl%2F6j8FNN9gV0wqIizc6n0j84ElORztGUllc4SGWbCHwcuZMIh86yksS12qE71%2B%2B5hQT3pGxbTtbPkbKgMWduws7TuImT5M3Wpa%2FuNLhtY643bahCZ6a46Np%2BH6yKlAgVR3rZIcq3qz0Otvj1Wqk8M8DCh0ReulENEXKb9U%2F78zXwxFGcwKlIwwjajQ9Fp%2BokaCi9Ws%2BN%2BJ7CIrq4HHDrTuGxRvxw%3D%3D%7Ctkp%3ABFBMmqTFz6tm",
           "currency": "MXN",
-          "image": "https://bsl.cwa.sellercloud.com/images/products/330397.jpg"
-        },
-        {
-          "store": "Walmart",
-          "price": 8799,
-          "url": "https://www.walmart.com.mx",
-          "currency": "MXN",
-          "image": "https://tse1.mm.bing.net/th/id/OIP.-nFQ96Funs8929MpyO4elgHaGz?w=500&h"
-        },
-        {
-          "store": "Best Buy",
-          "price": 8999,
-          "url": "https://www.bestbuy.com.mx",
-          "currency": "MXN",
-          "image": "https://pisces.bbystatic.com/image2/BestBuy_MX/images/products/1000/1000245987_sa.jpg"
+          "image": "https://i.ebayimg.com/images/g/KmMAAOSwU19moeCf/s-l1600.webp"
         }
       ]
     },
@@ -49,25 +28,40 @@
       "prices": [
         {
           "store": "Amazon",
-          "price": 24999,
+          "price": 399.99,
           "url": "https://www.amazon.com.mx",
           "currency": "MXN",
-          "image": "https://th.bing.com/th/id/R.dcd4e87fca64ee6a9a7c172d79c8885e?rik=ie4FxPyLTWYwbw&pid=ImgRaw&r=0"
-        },
-        {
-          "store": "Mercado Libre",
-          "price": 23999,
-          "url": "https://www.mercadolibre.com.mx",
-          "currency": "MXN",
-          "image": "https://http2.mlstatic.com/D_NQ_NP_2X_722100-MLM53215816084_012023-F.webp"
+          "image": "https://m.media-amazon.com/images/I/51UuPZLMaCL._AC_SX679_.jpg"
         },
         {
           "store": "eBay",
-          "price": 22999,
-          "url": "https://www.ebay.com",
+          "price": 414.99,
+          "url": "https://www.ebay.com/itm/326721900007?_skw=iphone+13+pro&epid=19049287650&itmmeta=01K5EGKG9FRJ00WM1FFM727HTN&hash=item4c12248de7:g:vnMAAOSwaMZkCeUu&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1eLQv0cC1yelJV6m9cQ7S9t%2FgHrqJOZafWw7ZlOSQuMrvbk%2BTmcfDE%2BMzf1T%2BSqg7FIK954Z0XWj22LqIFy6YS0Oo4p%2FYlyDq7uTkco9eDgD4T%2BF1S19GqCRp47bDbujX1wJBJCj50tAxN6l3pOhpIEw3puQ6mdEPX7%2BzQqBGPqsLWLZw334uy33Hv0DprQDQshXr1soHg6%2F8AuZIx8dT82jwlWO1fdyYT0nBLnlmXrqQ%2BIhFmwsDtFhIYipczv0ZI4hQW6ByDBsRvmaOTV3OslCeaaqGlCvakxCY5CN2rLtQ%3D%3D%7Ctkp%3ABFBMioXO0Ktm",
           "currency": "MXN",
-          "image": "https://i.ebayimg.com/images/g/2yIAAOSw2wVj0y1j/s-l1600.jpg"
+          "image": "https://i.ebayimg.com/images/g/vnMAAOSwaMZkCeUu/s-l1600.webp"
         }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dior Color de labios brillante, rosa, 0.20 onzas",
+      "image": "https://m.media-amazon.com/images/I/31ptyU4JbXL._SX300_SY300_QL70_FMwebp_.jpg",
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 35.70,
+          "url": "https://www.amazon.com/dp/B0837ZGCQ5?ref=cm_sw_r_cso_wa_mwn_dp_4N918KNNAHEZKFVSG5H3&ref_=cm_sw_r_cso_wa_mwn_dp_4N918KNNAHEZKFVSG5H3&social_share=cm_sw_r_cso_wa_mwn_dp_4N918KNNAHEZKFVSG5H3&th=1",
+          "currency": "MXN",
+          "image": "https://m.media-amazon.com/images/I/31ptyU4JbXL._SX300_SY300_QL70_FMwebp_.jpg"
+        },
+        {
+          "store": "Temu",
+          "price": 34.70,
+          "url": "https://www.temu.com/goods.html?_bg_fs=1&refer_share_id=nLSWFzExzG6CcmvYKxuFevXNDhvwH8sU&refer_share_channel=whatsapp_chat&from_share=1&goods_id=601101464629589&_oak_page_source=417&_oak_region=61&refer_share_suin=RSSBA2TRVAIHHEUOURQGA32PFHAHVENT24DTZ3KKLGEBTLYQV6VZYXJTQWSTSXNVRJ5WXLZEPI&share_img=https%3A%2F%2Fimg.kwcdn.com%2Fgoods-detail%2F35b7c2%2FyeUWmfsNGd%2Fe74147751fe14f658a80d3f247ba8f9f.png&share_ui_type=1&_oaksn_=F0e%2FlHG4mDlIP%2F9eTgdLz0sBF1L17H%2BhlVhkELc9M7I%3D",
+          "currency": "MXN",
+          "image": "https://img.kwcdn.com/product/fancy/03fe1140-f288-4f4a-bac0-c390b2f001cd.jpg?imageView2/2/w/800/q/70/format/avif"
+        }
+
       ]
     }
   ]
