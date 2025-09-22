@@ -15,6 +15,17 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
+      path: '/local',
+      name: 'local-stores',
+      component: () => import('../views/LocalStoresView.vue')
+    },
+    {
+      path: '/local/product/:id',
+      name: 'local-product-detail',
+      component: () => import('../views/LocalProductDetail.vue'),
+      props: true
+    },
+    {
       path: '/product/:id',
       name: 'product-detail',
       component: () => import('../views/ProductDetail.vue'),

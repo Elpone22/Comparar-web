@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "Samsung Galaxy A15 (Local)",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/mx/feature/164258800/mx-feature-galaxy-a15-5g-544204226?$720_576_JPG$",
+      "prices": [
+        { "store": "TecnoCentro CDMX", "price": 3799, "currency": "MXN", "address": "Av. Reforma 123, CDMX" },
+        { "store": "Phone Market Puebla", "price": 3890, "currency": "MXN", "address": "Calle 5 Sur 456, Puebla" },
+        { "store": "Celulandia GDL", "price": 3850, "currency": "MXN", "address": "Av. Vallarta 2000, Guadalajara" }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Xiaomi Redmi Note 13 (Local)",
+      "image": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-13-pro-5g/pc/8c2d99b3f1.png",
+      "prices": [
+        { "store": "Plaza de la Tecnología GDL", "price": 4299, "currency": "MXN", "address": "Av. 16 de Septiembre 45, Guadalajara" },
+        { "store": "Centro Cel Monterrey", "price": 4190, "currency": "MXN", "address": "Morelos 789, Monterrey" }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Labial mate marca local",
+      "image": "https://images.unsplash.com/photo-1585238342024-78a5b6f6a0b8?q=80&w=800&auto=format&fit=crop",
+      "prices": [
+        { "store": "Farmacia Guadalajara", "price": 159, "currency": "MXN", "address": "Av. Vallarta 1234, Guadalajara" },
+        { "store": "Liverpool Centro", "price": 149, "currency": "MXN", "address": "Av. Juárez 567, CDMX" }
+      ]
+    }
+  ]
+}

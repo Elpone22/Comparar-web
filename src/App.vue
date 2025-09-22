@@ -4,7 +4,8 @@ import { RouterView } from 'vue-router'
 
 const drawer = ref(false)
 const menuItems = [
-  { title: 'Inicio', icon: 'mdi-home', to: '/' },
+  { title: 'Tiendas en Linea', icon: 'mdi-home', to: '/' },
+  { title: 'Tiendas locales', icon: 'mdi-store', to: '/local' },
   { title: 'Acerca de', icon: 'mdi-information', to: '/about' },
 ]
 
@@ -31,6 +32,20 @@ onMounted(() => {
       ></v-app-bar-nav-icon>
 
       <v-toolbar-title>PriceCompare</v-toolbar-title>
+
+      <!-- Menú en la franja azul (visible en pantallas medianas en adelante) -->
+      <v-toolbar-items class="d-none d-md-flex ml-4">
+        <v-btn
+          v-for="(item, i) in menuItems"
+          :key="`topbar-${i}`"
+          :to="item.to"
+          :prepend-icon="item.icon"
+          variant="text"
+          class="mx-1"
+        >
+          {{ item.title }}
+        </v-btn>
+      </v-toolbar-items>
 
       <v-spacer></v-spacer>
 

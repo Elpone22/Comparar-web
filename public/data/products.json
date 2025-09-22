@@ -19,6 +19,22 @@
           "currency": "MXN",
           "image": "https://i.ebayimg.com/images/g/KmMAAOSwU19moeCf/s-l1600.webp"
         }
+      ],
+      "localPrices": [
+        {
+          "store": "TecnoCentro CDMX",
+          "price": 4700,
+          "currency": "MXN",
+          "address": "Av. Reforma 123, CDMX",
+          "url": ""
+        },
+        {
+          "store": "Phone Market Puebla",
+          "price": 4899,
+          "currency": "MXN",
+          "address": "Calle 5 Sur 456, Puebla",
+          "url": ""
+        }
       ]
     },
     {
@@ -39,6 +55,22 @@
           "url": "https://www.ebay.com/itm/326721900007?_skw=iphone+13+pro&epid=19049287650&itmmeta=01K5EGKG9FRJ00WM1FFM727HTN&hash=item4c12248de7:g:vnMAAOSwaMZkCeUu&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1eLQv0cC1yelJV6m9cQ7S9t%2FgHrqJOZafWw7ZlOSQuMrvbk%2BTmcfDE%2BMzf1T%2BSqg7FIK954Z0XWj22LqIFy6YS0Oo4p%2FYlyDq7uTkco9eDgD4T%2BF1S19GqCRp47bDbujX1wJBJCj50tAxN6l3pOhpIEw3puQ6mdEPX7%2BzQqBGPqsLWLZw334uy33Hv0DprQDQshXr1soHg6%2F8AuZIx8dT82jwlWO1fdyYT0nBLnlmXrqQ%2BIhFmwsDtFhIYipczv0ZI4hQW6ByDBsRvmaOTV3OslCeaaqGlCvakxCY5CN2rLtQ%3D%3D%7Ctkp%3ABFBMioXO0Ktm",
           "currency": "MXN",
           "image": "https://i.ebayimg.com/images/g/vnMAAOSwaMZkCeUu/s-l1600.webp"
+        }
+      ],
+      "localPrices": [
+        {
+          "store": "Apple Store Andares",
+          "price": 7999,
+          "currency": "MXN",
+          "address": "Blvd. Puerta de Hierro 4965, Zapopan, Jal.",
+          "url": ""
+        },
+        {
+          "store": "Plaza de la Tecnología GDL",
+          "price": 7590,
+          "currency": "MXN",
+          "address": "Av. 16 de Septiembre 45, Guadalajara, Jal.",
+          "url": ""
         }
       ]
     },
@@ -62,6 +94,22 @@
           "image": "https://img.kwcdn.com/product/fancy/03fe1140-f288-4f4a-bac0-c390b2f001cd.jpg?imageView2/2/w/800/q/70/format/avif"
         }
 
+      ],
+      "localPrices": [
+        {
+          "store": "Farmacia Guadalajara",
+          "price": 720,
+          "currency": "MXN",
+          "address": "Av. Vallarta 1234, Guadalajara, Jal.",
+          "url": ""
+        },
+        {
+          "store": "Liverpool Centro",
+          "price": 699,
+          "currency": "MXN",
+          "address": "Av. Juárez 567, CDMX",
+          "url": ""
+        }
       ]
     }
   ]

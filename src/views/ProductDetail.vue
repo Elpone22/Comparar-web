@@ -43,57 +43,115 @@
             {{ selectedStore ? `Vista de ${selectedStore.store}` : 'Comparación de precios' }}
           </v-card-subtitle>
           
-          
+          <v-tabs v-model="activeTab" class="mb-4" bg-color="transparent" color="primary">
+            <v-tab value="online">Tiendas en línea</v-tab>
+            <v-tab value="local">Tiendas locales</v-tab>
+          </v-tabs>
 
-          <v-list class="mb-4">
-            <v-list-item
-              v-for="(price, index) in sortedPrices"
-              :key="index"
-              :class="{ 'best-price': index === 0, 'store-selected': selectedStoreIndex === index }"
-              class="mb-2 store-item"
-              @click="selectStore(index)"
-              :ripple="true"
-            >
-              <template v-slot:prepend>
-                <v-avatar :color="index === 0 ? 'green-lighten-4' : 'grey-lighten-4'" size="48">
-                  <span class="text-h6">{{ index + 1 }}°</span>
-                </v-avatar>
-              </template>
-
-              <v-list-item-title class="text-h6 font-weight-medium">
-                {{ price.store }}
-              </v-list-item-title>
-              
-              <v-list-item-subtitle class="text-right">
-                <span class="text-h5 font-weight-bold" :class="{ 'text-green-darken-2': index === 0 }">
-                  {{ formatPrice(price.price) }}
-                </span>
-                <v-chip 
-                  v-if="index === 0" 
-                  color="green" 
-                  size="small" 
-                  class="ml-2"
-                  text-color="white"
+          <v-window v-model="activeTab">
+            <v-window-item value="online">
+              <v-list class="mb-4">
+                <v-list-item
+                  v-for="(price, index) in sortedOnlinePrices"
+                  :key="`online-${index}`"
+                  :class="{ 'best-price': index === 0, 'store-selected': selectedOnlineIndex === index }"
+                  class="mb-2 store-item"
+                  @click="selectOnline(index)"
+                  :ripple="true"
                 >
-                  Mejor precio
-                </v-chip>
-              </v-list-item-subtitle>
+                  <template v-slot:prepend>
+                    <v-avatar :color="index === 0 ? 'green-lighten-4' : 'grey-lighten-4'" size="48">
+                      <span class="text-h6">{{ index + 1 }}°</span>
+                    </v-avatar>
+                  </template>
 
-              <template v-slot:append>
-                <v-btn
-                  :href="price.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  color="primary"
-                  variant="flat"
-                  class="ml-4"
+                  <v-list-item-title class="text-h6 font-weight-medium">
+                    {{ price.store }}
+                  </v-list-item-title>
+                  
+                  <v-list-item-subtitle class="text-right">
+                    <span class="text-h5 font-weight-bold" :class="{ 'text-green-darken-2': index === 0 }">
+                      {{ formatPrice(price.price) }}
+                    </span>
+                    <v-chip 
+                      v-if="index === 0" 
+                      color="green" 
+                      size="small" 
+                      class="ml-2"
+                      text-color="white"
+                    >
+                      Mejor precio
+                    </v-chip>
+                  </v-list-item-subtitle>
+
+                  <template v-slot:append>
+                    <v-btn
+                      :href="price.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      color="primary"
+                      variant="flat"
+                      class="ml-4"
+                    >
+                      Ver
+                      <v-icon end>mdi-open-in-new</v-icon>
+                    </v-btn>
+                  </template>
+                </v-list-item>
+              </v-list>
+            </v-window-item>
+
+            <v-window-item value="local">
+              <v-alert v-if="!product.localPrices || product.localPrices.length === 0" type="info" variant="tonal" class="mb-4">
+                Aún no hay datos de tiendas locales para este producto.
+              </v-alert>
+
+              <v-list v-else class="mb-4">
+                <v-list-item
+                  v-for="(price, index) in sortedLocalPrices"
+                  :key="`local-${index}`"
+                  :class="{ 'best-price': index === 0, 'store-selected': selectedLocalIndex === index }"
+                  class="mb-2 store-item"
+                  @click="selectLocal(index)"
+                  :ripple="true"
                 >
-                  Ver
-                  <v-icon end>mdi-open-in-new</v-icon>
-                </v-btn>
-              </template>
-            </v-list-item>
-          </v-list>
+                  <template v-slot:prepend>
+                    <v-avatar :color="index === 0 ? 'green-lighten-4' : 'grey-lighten-4'" size="48">
+                      <span class="text-h6">{{ index + 1 }}°</span>
+                    </v-avatar>
+                  </template>
+
+                  <v-list-item-title class="text-h6 font-weight-medium">
+                    {{ price.store }}
+                  </v-list-item-title>
+                  
+                  <v-list-item-subtitle>
+                    <div class="d-flex flex-column align-end w-100">
+                      <span class="text-h5 font-weight-bold" :class="{ 'text-green-darken-2': index === 0 }">
+                        {{ formatPrice(price.price) }}
+                      </span>
+                      <small v-if="price.address" class="text-grey">{{ price.address }}</small>
+                    </div>
+                  </v-list-item-subtitle>
+
+                  <template v-slot:append>
+                    <v-btn
+                      v-if="price.url"
+                      :href="price.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      color="primary"
+                      variant="flat"
+                      class="ml-4"
+                    >
+                      Ver
+                      <v-icon end>mdi-open-in-new</v-icon>
+                    </v-btn>
+                  </template>
+                </v-list-item>
+              </v-list>
+            </v-window-item>
+          </v-window>
 
           <v-divider class="my-4"></v-divider>
 
@@ -105,7 +163,7 @@
               </div>
             </div>
             <v-btn
-              v-if="bestDeal"
+              v-if="bestDeal && activeTab === 'online' && bestDeal.url"
               :href="bestDeal.url"
               target="_blank"
               rel="noopener noreferrer"
@@ -201,6 +259,7 @@ interface Price {
   url: string
   currency: string
   image?: string // Imagen específica de la tienda (opcional)
+  address?: string // Para tiendas locales (opcional)
 }
 
 interface Product {
@@ -208,20 +267,31 @@ interface Product {
   name: string
   image: string
   prices: Price[]
+  localPrices?: Price[]
 }
 
 const route = useRoute()
 const router = useRouter()
 const product = ref<Product | null>(null)
 const loading = ref(true)
-const selectedStoreIndex = ref<number | null>(null)
+const activeTab = ref<'online' | 'local'>('online')
+const selectedOnlineIndex = ref<number | null>(null)
+const selectedLocalIndex = ref<number | null>(null)
 const selectedStore = ref<Price | null>(null)
 
-// Seleccionar tienda automáticamente la primera vez
-const selectStore = (index: number) => {
-  selectedStoreIndex.value = index
+// Seleccionar tienda (online)
+const selectOnline = (index: number) => {
+  selectedOnlineIndex.value = index
   if (product.value) {
-    selectedStore.value = { ...product.value.prices[index] }
+    selectedStore.value = { ...sortedOnlinePrices.value[index] }
+  }
+}
+
+// Seleccionar tienda (local)
+const selectLocal = (index: number) => {
+  selectedLocalIndex.value = index
+  if (product.value && sortedLocalPrices.value.length > index) {
+    selectedStore.value = { ...sortedLocalPrices.value[index] }
   }
 }
 
@@ -269,6 +339,9 @@ const loadProduct = async () => {
     if (foundProduct) {
       // Ordenar precios de menor a mayor
       foundProduct.prices.sort((a: Price, b: Price) => a.price - b.price)
+      if (foundProduct.localPrices) {
+        foundProduct.localPrices.sort((a: Price, b: Price) => a.price - b.price)
+      }
       product.value = foundProduct
     } else {
       // Redirigir a la página de inicio si no se encuentra el producto
@@ -282,12 +355,20 @@ const loadProduct = async () => {
 }
 
 // Propiedades computadas
-const sortedPrices = computed(() => {
+const sortedOnlinePrices = computed(() => {
   return product.value ? [...product.value.prices].sort((a, b) => a.price - b.price) : []
 })
 
+const sortedLocalPrices = computed(() => {
+  return product.value && product.value.localPrices ? [...product.value.localPrices].sort((a, b) => a.price - b.price) : []
+})
+
 const bestDeal = computed(() => {
-  return sortedPrices.value.length > 0 ? sortedPrices.value[0] : null
+  if (activeTab.value === 'online') {
+    return sortedOnlinePrices.value.length > 0 ? sortedOnlinePrices.value[0] : null
+  } else {
+    return sortedLocalPrices.value.length > 0 ? sortedLocalPrices.value[0] : null
+  }
 })
 
 const averagePrice = computed(() => {
@@ -315,9 +396,12 @@ const formatPrice = (price: number) => {
 }
 
 const calculateSavings = () => {
-  if (!product.value || product.value.prices.length < 2) return formatPrice(0)
+  if (!product.value) return formatPrice(0)
   
-  const prices = product.value.prices.map(p => p.price)
+  const list = activeTab.value === 'online' ? (product.value.prices || []) : (product.value.localPrices || [])
+  if (list.length < 2) return formatPrice(0)
+
+  const prices = list.map(p => p.price)
   const maxPrice = Math.max(...prices)
   const minPrice = Math.min(...prices)
   const savings = maxPrice - minPrice
@@ -325,18 +409,13 @@ const calculateSavings = () => {
   return formatPrice(savings)
 }
 
-// Verificar si un precio es el mejor
-// const isBestPrice = (price: number) => {
-//   if (!product.value) return false
-//   return price === Math.min(...product.value.prices.map(p => p.price))
-// }
 
 // Cargar el producto cuando se monte el componente
 onMounted(async () => {
   await loadProduct()
   // Seleccionar automáticamente la primera tienda al cargar
   if (product.value && product.value.prices.length > 0) {
-    selectStore(0)
+    selectOnline(0)
   }
 })
 </script>
