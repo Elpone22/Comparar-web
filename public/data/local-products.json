@@ -2,30 +2,57 @@
   "products": [
     {
       "id": 101,
-      "name": "Samsung Galaxy A15 (Local)",
-      "image": "https://images.samsung.com/is/image/samsung/p6pim/mx/feature/164258800/mx-feature-galaxy-a15-5g-544204226?$720_576_JPG$",
+      "name": "Samsung Galaxy s10 plus ",
+      "image": "https://bsl.cwa.sellercloud.com/images/products/330397.jpg",
       "prices": [
-        { "store": "TecnoCentro CDMX", "price": 3799, "currency": "MXN", "address": "Av. Reforma 123, CDMX" },
-        { "store": "Phone Market Puebla", "price": 3890, "currency": "MXN", "address": "Calle 5 Sur 456, Puebla" },
-        { "store": "Celulandia GDL", "price": 3850, "currency": "MXN", "address": "Av. Vallarta 2000, Guadalajara" }
+        {
+         "store": "TecnoArce", 
+         "price": 150.00, 
+         "currency": "USD"
+       
+        },
+        { 
+          "store": "ArceTecnologia", 
+          "price": 160.00, 
+          "currency": "USD"
+          
+        }
       ]
     },
     {
       "id": 102,
-      "name": "Xiaomi Redmi Note 13 (Local)",
-      "image": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-13-pro-5g/pc/8c2d99b3f1.png",
+      "name": "Iphone 13 pro max",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero",
       "prices": [
-        { "store": "Plaza de la Tecnología GDL", "price": 4299, "currency": "MXN", "address": "Av. 16 de Septiembre 45, Guadalajara" },
-        { "store": "Centro Cel Monterrey", "price": 4190, "currency": "MXN", "address": "Morelos 789, Monterrey" }
+        { 
+          "store": "Smart 911", 
+          "price": 450.00,
+          "url": "https://www.instagram.com/smart911sv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", 
+          "currency": "USD"
+        },
+        { 
+          "store": "La Curacao", 
+          "price": 500.00,
+          "url": "https://www.lacuracaonline.com/elsalvador/celular-apple-iphone-13-pro-max-128gb-6-7-grafito-459764900017/p", 
+          "currency": "USD" 
+        }
       ]
     },
     {
       "id": 103,
       "name": "Labial mate marca local",
-      "image": "https://images.unsplash.com/photo-1585238342024-78a5b6f6a0b8?q=80&w=800&auto=format&fit=crop",
+      "image": "https://m.media-amazon.com/images/I/31ptyU4JbXL._SX300_SY300_QL70_FMwebp_.jpg",
       "prices": [
-        { "store": "Farmacia Guadalajara", "price": 159, "currency": "MXN", "address": "Av. Vallarta 1234, Guadalajara" },
-        { "store": "Liverpool Centro", "price": 149, "currency": "MXN", "address": "Av. Juárez 567, CDMX" }
+        { 
+          "store": "Siman", 
+          "price": 30.00, 
+          "currency": " USD"
+        },
+        { 
+          "store": "Mac-Cpsmetic", 
+          "price": 35.00, 
+          "currency": "USD"
+        }
       ]
     }
   ]
