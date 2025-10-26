@@ -32,7 +32,7 @@ onMounted(() => {
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
 
-      <v-toolbar-title>PriceCompare</v-toolbar-title>
+      <v-toolbar-title>Intercomex</v-toolbar-title>
 
       <!-- Menú en la franja azul (visible en pantallas medianas en adelante) -->
       <v-toolbar-items class="d-none d-md-flex ml-4">
@@ -80,7 +80,7 @@ onMounted(() => {
     <v-footer app>
       <v-row justify="center" no-gutters>
         <v-col class="text-center mt-4" cols="12">
-          {{ new Date().getFullYear() }} — <strong>PriceCompare</strong>
+          {{ new Date().getFullYear() }} — <strong>Intercomex</strong>
         </v-col>
       </v-row>
     </v-footer>

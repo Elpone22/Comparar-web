@@ -2,20 +2,20 @@
   <v-container class="py-8">
     <v-card class="mx-auto" max-width="800">
       <v-card-title class="text-h4 font-weight-bold text-center py-6">
-        Acerca de PriceCompare
+        Acerca de Intercomex
       </v-card-title>
       
       <v-card-text class="pa-6">
         <v-row>
           <v-col cols="12" md="6" class="d-flex align-center">
             <div>
-              <h3 class="text-h5 mb-4">¿Qué es PriceCompare?</h3>
+              <h3 class="text-h5 mb-4">¿Qué es Intercomex?</h3>
               <p class="text-body-1 mb-4">
-                PriceCompare es una aplicación web que te permite comparar precios de productos 
+                Intercomex es una aplicación web que te permite comparar precios de productos 
                 en diferentes tiendas en línea de manera rápida y sencilla.
               </p>
               <p class="text-body-1 mb-4">
-                Nuestro objetivo es ayudarte a encontrar las mejores ofertas y ahorrar dinero en tus compras en línea.
+                Nuestro objetivo es ayudarte a encontrar las mejores ofertas y ahorrar dinero en tus compras en línea y tiendas locales.
               </p>
             </div>
           </v-col>
@@ -51,7 +51,7 @@
       
       <v-card-actions class="pa-4">
         <v-btn color="primary" to="/" prepend-icon="mdi-arrow-left">
-          Volver al inicio
+          Volver a seleccionar productos
         </v-btn>
       </v-card-actions>
     </v-card>
