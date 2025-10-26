@@ -4,7 +4,8 @@ import { RouterView } from 'vue-router'
 
 const drawer = ref(false)
 const menuItems = [
-  { title: 'Tiendas en Linea', icon: 'mdi-home', to: '/' },
+  { title: 'Seleccionar productos', icon: 'mdi-package-variant', to: '/' },
+  { title: 'Ver todas las tiendas', icon: 'mdi-home', to: '/home' },
   { title: 'Tiendas locales', icon: 'mdi-store', to: '/local' },
   { title: 'Acerca de', icon: 'mdi-information', to: '/about' },
 ]

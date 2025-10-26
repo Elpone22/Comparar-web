@@ -19,6 +19,7 @@ const props = defineProps<{
       currency: string
     }>
   }
+  simple?: boolean
 }>()
 
 const formatPrice = (price: number) => {
@@ -32,7 +33,7 @@ const formatPrice = (price: number) => {
 <template>
   <v-card 
     class="mx-auto my-4 product-card" 
-    max-width="400"
+    max-width="300"
     @click="goToDetail"
     :hover="true"
     :ripple="true"
@@ -43,7 +44,8 @@ const formatPrice = (price: number) => {
       {{ product.name }}
     </v-card-title>
 
-    <v-card-text>
+    <!-- Mostrar información detallada solo si no es simple -->
+    <v-card-text v-if="!simple">
       <v-list>
         <v-list-item v-for="(price, index) in product.prices" :key="index">
           <template v-slot:prepend>
